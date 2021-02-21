@@ -1,0 +1,95 @@
+.shinchan {
+  background: url(images/main/shinchan.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.doraemon {
+  background: url(images/main/doraemon.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.ninjahattori {
+  background: url(images/main/ninja-hattori.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.birikencompany {
+  background: url(images/main/biriken-company.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.chimpui {
+  background: url(images/main/chimpui.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.mojocko {
+  background: url(images/main/mojocko.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.mami {
+  background: url(images/main/mami-the-psychic.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.kochikame {
+  background: url(images/main/kochikame.jpg) 0 0 no-repeat;
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+
+.shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame {
+  background-size: cover;
+  position: relative;
+}   
+
+.shinchan:hover .overlay-effect,
+.doraemon:hover .overlay-effect,
+.ninjahattori:hover .overlay-effect,
+.birikencompany:hover .overlay-effect,
+.chimpui:hover .overlay-effect,
+.mojocko:hover .overlay-effect,
+.mami:hover .overlay-effect,
+.kochikame:hover .overlay-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(259, 67, 95, 0.7);
+  overflow:hidden;
+}
+
+.shinchan a,
+.doraemon a,
+.ninjahattori a,
+.birikencompany a,
+.chimpui a,
+.mojocko a,
+.mami a,
+.kochikame a {
+  color: #fff;
+}
+
+.shinchan h3,
+.doraemon h3,
+.ninjahattori h3,
+.birikencompany h3,
+.chimpui h3,
+.mojocko h3,
+.mami h3,
+.kochikame h3 {
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 768px) {
+ .shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame {margin-bottom: 10px;}
+}
