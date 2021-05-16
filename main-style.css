@@ -1,9 +1,11 @@
 /* Universal */
 body {
-		background-color: lightblue;
-		}
+  background-color: lightblue;
+}
 		
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* Content */
 
@@ -58,6 +60,13 @@ body {
     float: none;
   }
 }
+
+@media screen and (max-width: 500px) and (max-width: 1024px)
+{
+.header-right {
+    display: none;
+}
+ }
 
 /* Footer */
 .footer {
