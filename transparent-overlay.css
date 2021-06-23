@@ -1,45 +1,55 @@
 .shinchan {
-  background: url(images/main/shinchan.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/shinchan.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .doraemon {
-  background: url(images/main/doraemon.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/doraemon.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .ninjahattori {
-  background: url(images/main/ninja-hattori.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/ninja-hattori.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .birikencompany {
-  background: url(images/main/biriken-company.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/biriken-company.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .chimpui {
-  background: url(images/main/chimpui.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/chimpui.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .mojocko {
-  background: url(images/main/mojocko.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/mojocko.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .mami {
-  background: url(images/main/mami-the-psychic.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/mami-the-psychic.jpg);
   min-height: 301px;
   margin-bottom: 30px;
 }
 .kochikame {
-  background: url(images/main/kochikame.jpg) 0 0 no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/kochikame.jpg);
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.kiteretsu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/kiteretsu.jpg);
+  min-height: 301px;
+  margin-bottom: 30px;
+}
+.ultrab {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/main/ultra-b.png);
   min-height: 301px;
   margin-bottom: 30px;
 }
 
-.shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame {
+.shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame, .kiteretsu, .ultrab {
   background-size: cover;
   position: relative;
 }   
@@ -51,7 +61,9 @@
 .chimpui:hover .overlay-effect,
 .mojocko:hover .overlay-effect,
 .mami:hover .overlay-effect,
-.kochikame:hover .overlay-effect {
+.kochikame:hover .overlay-effect,
+.kiteretsu:hover .overlay-effect,
+.ultrab:hover .overlay-effect {
   opacity: 1;
   cursor: pointer;
 }
@@ -75,7 +87,9 @@
 .chimpui a,
 .mojocko a,
 .mami a,
-.kochikame a {
+.kochikame a,
+.kiteretsu a,
+.ultrab a {
   color: #fff;
 }
 
@@ -86,10 +100,12 @@
 .chimpui h3,
 .mojocko h3,
 .mami h3,
-.kochikame h3 {
+.kochikame h3,
+.kiteretsu h3,
+.ultrab h3 {
   padding: 15px 30px;
 }
 
 @media screen and (max-width: 768px) {
- .shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame {margin-bottom: 10px;}
+ .shinchan, .doraemon, .ninjahattori, .birikencompany, .chimpui, .mojocko, .mami, .kochikame, .kiteretsu, .ultrab {margin-bottom: 10px;}
 }
