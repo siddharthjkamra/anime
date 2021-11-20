@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+body {
+font-family: 'Kiwi Maru', serif;
+}
+
+@media (min-width: 600px) {
+.main {display: none;}
+}
+
+@media (max-width: 600px) {
+.desktop {display: none;}
+}
+
+fl{}.fl td{padding:7px 2px;border-bottom:1px solid #ccc}.fl a{vertical-align:middle}.fl img{border:1px solid #bbb;padding:1px;width:90px;height:100px}.fl div{display:table-cell}
+
+.fl{border-bottom:1px solid #ddd;background:#fff}.fl:hover{background:#f5f5f5}.fl span{font-weight:400}.fl span.mc{font-size:80%;color:#555;font-weight:700}.fl span.alb{color:#67b241;font-style:italic}.fl span.ar{color:#d2691e;font-style:italic}.fl span.sr{font-weight:700;font-style:italic;color:#aaa;margin-right:3px}.fl a{display:block;padding:8px}.fl a img{margin-right:5px;vertical-align:middle;border:1px solid #999;padding:1px;box-shadow:0 0 2px #999}.fl a div div{vertical-align:middle;display:table-cell}.fl a div{vertical-align:middle}
+
+h1,h2,h3{text-align:center;background:#eee;color:#222;border:1px solid #ddd;font-size:120%;padding:2px}
+
+a {
+text-decoration: none;
+}
+
+span {
+color: #000;
+}
