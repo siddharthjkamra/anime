@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AnimeDB</title>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+<header><img src="images/logo.png" alt="animedb"></img></header>
+<div class="hero">
+<img class="show-slide" src="images/main/doraemon.jpg" width="100%">
+<img class="show-slide" src="images/main/shinchan.jpg" width="100%">
+<img class="show-slide" src="images/main/kiteretsu.jpg" width="100%">
+<img class="show-slide" src="images/main/mojocko.jpg" width="100%">
+<img class="show-slide" src="images/main/mami-the-psychic.jpg" width="100%">
+<img class="show-slide" src="images/main/ultra-b.png" width="100%">
+<img class="show-slide" src="images/main/biriken-company.jpg" width="100%">
+<img class="show-slide" src="images/main/ninja-hattori.jpg" width="100%">
+<img class="show-slide" src="images/main/chimpui.jpg" width="100%">
+
+<script>
+w3.slideshow(".show-slide", 5000);
+</script>
+</div>
+<div class="title">Series</div>
+<div class="folder-list">
+<ul>
+<li><a href="/series/doraemon">Doraemon</a></li>
+<li>Ninja Hattori</li>
+<li>Shinchan</li>
+<li>Chimpui</li>
+<li>Biriken Company</li>
+<li>Kochikame</li>
+<li>Mojacko</li>
+<li>Mami the Psychic</li>
+<li>Kiteretsu</li>
+<li>Perman</li>
+<li>Ultra B</li>
+<li>Barakamon</li>
+</ul>
+</div>
+
+<div class="title">Movies</div>
+<div class="folder-list">
+<ul>
+<li><a href="#/movies/sa">Spirited Away</a></li>
+<li>My Neighbor Totoro</li>
+<li>From Up on Poppy Hill</li>
+<li>Kiki's Delivery Service</li>
+</ul>
+</div>
+
+<footer>
+<img src="images/logo.png" style="background-color:#ffffff;width:100px;padding:2px;border-radius:2px;" alt="AnimeDB"></img>
+<p>AnimeDB is an community for anime encyclopedia. All the pictures are used for fair usage only. This site do not share any copyrighted content that affects the owner.</p>
+</footer>
+<style>
+@font-face {
+font-family: OP-Reg;
+src: url(images/OP-Reg.ttf);
+}
+
+@font-face {
+font-family: OP-Bold;
+src: url(images/OP.ttf);
+}
+
+body {
+margin: 0;
+font-family: OP-Reg;
+}
+
+.hero {
+text-align: center;
+padding: 3%;
+}
+						
+.title {
+font-family: OP-Bold;
+text-align: center;
+}
+
+header {
+text-align: center;
+}
+
+header img {
+width: 150px;
+}
+
+.folder-list ul {
+padding-left: 10px;
+list-style-type: none;
+color: blue;
+text-align: left;
+padding-right: 10px;
+}
+
+.folder-list li {
+padding: 5px;
+vertical-align: middle;
+border-bottom: 1px solid #e8eaed;
+}
+
+.folder-list li:hover {
+color: black;
+}
+
+.folder-list li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url('images/folder.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.folder-list a {
+text-decoration: none;
+}
+
+footer {
+background-color: #121212;
+padding: 5px;
+text-align: center;
+color: white;
+}
+</style>
+</body>
+</html>
