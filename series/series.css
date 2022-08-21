@@ -1,5 +1,10 @@
+@font-face {
+font-family: OP-Reg;
+src: url(../images/OP-Reg.ttf);
+}
+
 body {
-   font-family: 'Kiwi Maru', serif;
+font-family: OP-Reg;
 }
 
 .accordion {
