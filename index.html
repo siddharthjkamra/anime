@@ -8,6 +8,7 @@
 </head>
 <body>
 <header><img src="images/logo.png" alt="animedb"></img></header>
+<div class="body-for-pc">
 <div class="hero">
 <img class="show-slide" src="images/main/doraemon.jpg" width="100%">
 <img class="show-slide" src="images/main/shinchan.jpg" width="100%">
@@ -50,7 +51,7 @@ w3.slideshow(".show-slide", 5000);
 <li>Kiki's Delivery Service</li>
 </ul>
 </div>
-
+</div>
 <footer>
 <img src="images/logo.png" style="background-color:#ffffff;width:30vw;padding:2px;border-radius:2px;" alt="AnimeDB"></img>
 <p>AnimeDB is an community for anime encyclopedia. All the pictures are used for fair usage only. This site do not share any copyrighted content that affects the owner.</p>
@@ -76,6 +77,10 @@ max-width: auto;
 text-align: center;
 padding: 3vw;
 }
+
+.hero img {
+border-radius: 1vw;
+}
 						
 .title {
 font-family: OP-Bold;
@@ -85,6 +90,7 @@ font-size: 5.5vw;
 
 header {
 text-align: center;
+background-color: #acddde;
 }
 
 header img {
@@ -132,6 +138,16 @@ padding: 5px;
 text-align: center;
 color: white;
 font-size: 4vw;
+}
+
+@media only screen and (min-width: 800px) {
+.body-for-pc {
+width: 80%;
+margin: 0 auto;
+}
+.folder-list ul {
+font-size: 4vw;
+}
 }
 </style>
 </body>
