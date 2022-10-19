@@ -1,61 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>AnimeDB</title>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-</head>
-<body>
-<header><img src="images/logo.png" alt="animedb"></img></header>
-<div class="body-for-pc">
-<div class="hero">
-<img class="show-slide" src="images/main/doraemon.jpg" width="100%">
-<img class="show-slide" src="images/main/shinchan.jpg" width="100%">
-<img class="show-slide" src="images/main/kiteretsu.jpg" width="100%">
-<img class="show-slide" src="images/main/mojocko.jpg" width="100%">
-<img class="show-slide" src="images/main/mami-the-psychic.jpg" width="100%">
-<img class="show-slide" src="images/main/ultra-b.png" width="100%">
-<img class="show-slide" src="images/main/biriken-company.jpg" width="100%">
-<img class="show-slide" src="images/main/ninja-hattori.jpg" width="100%">
-<img class="show-slide" src="images/main/chimpui.jpg" width="100%">
-
-<script>
-w3.slideshow(".show-slide", 5000);
-</script>
-</div>
-<div class="title">Series</div>
-<div class="folder-list">
-<ul>
-<a href="/series/doraemon"><li>Doraemon</li></a>
-<li>Ninja Hattori</li>
-<li>Shinchan</li>
-<li>Chimpui</li>
-<li>Biriken Company</li>
-<li>Kochikame</li>
-<li>Mojacko</li>
-<li>Mami the Psychic</li>
-<li>Kiteretsu</li>
-<li>Perman</li>
-<li>Ultra B</li>
-<li>Barakamon</li>
-</ul>
-</div>
-
-<div class="title">Movies</div>
-<div class="folder-list">
-<ul>
-<a href="#/movies/sa"><li>Spirited Away</li></a>
-<li>My Neighbor Totoro</li>
-<li>From Up on Poppy Hill</li>
-<li>Kiki's Delivery Service</li>
-</ul>
-</div>
-</div>
-<footer>
-<img src="images/logo.png" style="background-color:#ffffff;width:30vw;padding:2px;border-radius:2px;" alt="AnimeDB"></img>
-<p>AnimeDB is an community for anime encyclopedia. All the pictures are used for fair usage only. This site do not share any copyrighted content that affects the owner.</p>
-</footer>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnimeDB - All About Anime</title>
 <style>
 @font-face {
 font-family: OP-Reg;
@@ -67,91 +14,164 @@ font-family: OP-Bold;
 src: url(images/OP.ttf);
 }
 
-body {
-margin: 0;
-font-family: OP-Reg;
-max-width: auto;
+* {
+  box-sizing: border-box;
 }
 
-.hero {
-text-align: center;
-padding: 3vw;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.hero img {
-border-radius: 1vw;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
-						
-.title {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: OP-Reg;
+}
+
+.header {
+  background-color: #acddde;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.header img {
+width: 100px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #acddde;
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: OP-Reg;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+h2 {
 font-family: OP-Bold;
-text-align: center;
-font-size: 5.5vw;
 }
 
-header {
-text-align: center;
-background-color: #acddde;
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-header img {
-width: 45vw;
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
 }
 
-.folder-list ul {
-padding-left: 10px;
-list-style-type: none;
-color: blue;
-text-align: left;
-padding-right: 10px;
-font-size: 4.5vw;
-}
-
-.folder-list li {
-padding: 1vw;
-vertical-align: middle;
-border-bottom: 0.2vw solid #e8eaed;
-}
-
-.folder-list li:before {
-  content: '';
-  display: inline-block;
-  height: 4.5vw;
-  width: 4.5vw;
-  background-image: url('images/folder.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-left: 5px;
+.column img {
+  margin-top: 8px;
   vertical-align: middle;
+  border-radius: 5px;
 }
 
-.folder-list a {
-text-decoration: none;
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.folder-list a:visited {
-color:blue;
+.btn:hover {
+  background-color: #ddd;
 }
 
-footer {
-background-color: #121212;
-padding: 5px;
-text-align: center;
-color: white;
-font-size: 4vw;
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 
-@media only screen and (min-width: 800px) {
-.body-for-pc {
-width: 90%;
-margin: 0 auto;
-}
-.folder-list ul {
-font-size: 3vw;
-}
-footer {
-font-size:3vw;
-}
-}
 </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/logo.png" alt="">
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>Series</li>
+      <li>Movies</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/main/doraemon.jpg" style="width:100%">
+    
+    <img src="images/main/biriken-company.jpg" style="width:100%">
+    
+    <img src="images/main/ninja-hattori.jpg" style="width:100%">
+    
+    <img src="images/main/shinchan.jpg" style="width:100%">
+    
+    <img src="images/main/chimpui.jpg" style="width:100%">
+    
+    <img src="images/main/mojocko.jpg" style="width:100%">
+    
+    <img src="images/main/mami-the-psychic.jpg" style="width:100%">
+    
+    <img src="images/main/kochikame.jpg" style="width:100%">
+    
+    <img src="images/main/ultra-b.png" style="width:100%">
+    
+    <img src="images/main/kiteretsu.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    
+    <img src="images/main/spirited-away.jpg" style="width:100%">
+    
+    <img src="images/main/totoro.jpg" style="width:100%">
+  </div>  
+</div>
+  </div>
+</div>
+
 </body>
 </html>
+
+
