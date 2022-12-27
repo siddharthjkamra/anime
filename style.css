@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #40396e;
+  margin-bottom: 10px;
+}
+
+header .sitetitle {
+  color: white;
+  padding: 10px;
+  font-size: 120%;
+}
+
+.title-series {
+  font-size: 150%;
+  text-align: center;
+}
+
+.title:before {
+  content: '♥️ ';
+}
+
+.main-img-cover {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.main-img-cover img {
+  width: 70%;
+  border-radius: 1%;
+}
+
+.container {
+  padding: 2%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  background-color: #40396e;
+  color: white;
+  padding: 1.5%;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul.breadcrumb {
+  padding: 2.5%;
+  list-style: none;
+  background-color: #eee;
+  margin: 1%;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1em;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  ul.breadcrumb {
+  padding: 2%;
+  }
+  .menu li {
+  padding: 1%;
+}
+}

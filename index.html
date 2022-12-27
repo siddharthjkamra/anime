@@ -1,177 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnimeDB - All About Anime</title>
-<style>
-@font-face {
-font-family: OP-Reg;
-src: url(images/OP-Reg.ttf);
-}
-
-@font-face {
-font-family: OP-Bold;
-src: url(images/OP.ttf);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-html {
-  font-family: OP-Reg;
-}
-
-.header {
-  background-color: #acddde;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.header img {
-width: 100px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #acddde;
-  color: #000000;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  font-family: OP-Reg;
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-h2 {
-font-family: OP-Bold;
-}
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  border-radius: 5px;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-</style>
+<title>AnimeDatabase</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header><div class="sitetitle">anime database</div></header>
+<div class="container">
+<div class="title">anime series</div>
+<ol>
+<a href="series/doraemon/index.html"><li>Doraemon</li></a>
+<a href="series/ninja-hattori/index.html"><li>Ninja Hattori</li></a>
+<a href="#"><li>Shinchan</li></a>
+<a href="#"><li>Perman</li></a>
+<a href="#"><li>Kiteretsu</li></a>
+<a href="#"><li>Chimpui</li></a>
+<a href="#"><li>Ultra B</li></a>
+<a href="#"><li>Kochikame</li></a>
+<a href="#"><li>Mojacko</li></a>
+<a href="#"><li>Mami the Psychic</li></a>
+<a href="#"><li>Biriken Company</li></a>
+<a href="#"><li>Atashinchi</li></a>
+<a href="#"><li>The Monster Kid</li></a>
+<a href="#"><li>Tsurupika Hagemaru</li></a>
+<a href="#"><li>First Human Giatrus (Gon - The Stone Age Boy)</li></a>
+</ol>
 
-<div class="header">
-  <img src="images/logo.png" alt="">
+<div class="title">anime movies</div>
+<ol>
+<a href="#"><li>Doraemon Movies</li></a>
+<a href="#"><li>Shinchan Movies</li></a>
+<a href="#"><li>Ninja Hattori Movies</li></a>
+</ol>
+
+<div class="title">ghibli movies</div>
+<ol>
+<a href="#"><li>Spirited Away</li></a>
+<a href="#"><li>From Up on the Poppy Hill</li></a>
+<a href="#"><li>My Neighbour Totoro</li></a>
+<a href="#"><li>Kiki's Delivery Service</li></a>
+<a href="#"><li>Castle in the Sky</li></a>
+<a href="#"><li>The Wind Rises</li></a>
+<a href="#"><li>Howl's Moving Castle</li></a>
+<a href="#"><li>Whisper of the Heart</li></a>
+<a href="#"><li>Ocean Waves</li></a>
+</ol>
+
+<div class="title">other movies/series</div>
+<ol>
+<a href="#"><li>Barakamon</li></a>
+<a href="#"><li>Mai Mai Miracle</li></a>
+<a href="#"><li>Anpanman</li></a>
+<a href="#"><li>Astro Boy</li></a>
+<a href="#"><li>Oishinbo</li></a>
+<a href="#"><li>The Laughing Salesman</li></a>
+<a href="#"><li>Erased</li></a>
+</ol>
+
+<div class="title">Companies</div>
+<ol>
+<a href="#"><li>Shogakukan</li></a>
+<a href="#"><li>Toho</li></a>
+<a href="#"><li>Fuji TV</li></a>
+<a href="#"><li>Shin-ei Animation</li></a>
+<a href="#"><li>Toho</li></a>
+<a href="#"><li>TV Asahi</li></a>
+<a href="#"><li>Animax</li></a>
+<a href="#"><li>Studio Ghibli</li></a>
+<a href="#"><li>Nippon TV</li></a>
+<a href="#"><li>Pierrot</li></a>
+<a href="#"><li>Studio Deen</li></a>
+<a href="#"><li>Shueisha</li></a>
+<a href="#"><li>Benesse</li></a>
+</ol>
 </div>
-
-<div class="row">
-  <div class="col-3 menu">
-    <ul>
-      <li>Series</li>
-      <li>Movies</li>
-    </ul>
-  </div>
-
-  <div class="col-9">
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="images/main/doraemon.jpg" style="width:100%">
-    
-    <img src="images/main/biriken-company.jpg" style="width:100%">
-    
-    <img src="images/main/ninja-hattori.jpg" style="width:100%">
-    
-    <img src="images/main/shinchan.jpg" style="width:100%">
-    
-    <img src="images/main/chimpui.jpg" style="width:100%">
-    
-    <img src="images/main/mojocko.jpg" style="width:100%">
-    
-    <img src="images/main/mami-the-psychic.jpg" style="width:100%">
-    
-    <img src="images/main/kochikame.jpg" style="width:100%">
-    
-    <img src="images/main/ultra-b.png" style="width:100%">
-    
-    <img src="images/main/kiteretsu.jpg" style="width:100%">
-  </div>
-  
-  <div class="column">
-    
-    <img src="images/main/spirited-away.jpg" style="width:100%">
-    
-    <img src="images/main/totoro.jpg" style="width:100%">
-  </div>  
-</div>
-  </div>
-</div>
-
 </body>
 </html>
-
-
