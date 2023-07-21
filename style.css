@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Victor Mono', monospace;
+  margin: 0;
 }
 
 body {
@@ -35,13 +36,14 @@ header .sitetitle {
 }
 
 .title:before {
-  content: '♥️ ';
+  content: '❤️ ';
 }
 
 .main-img-cover {
   width: 100%;
   text-align: center;
-  margin-bottom: 1%;
+  margin: 5px;
+  
 }
 
 .main-img-cover img {
@@ -112,26 +114,28 @@ ul.breadcrumb li a:hover {
 /* Create three equal columns that floats next to each other */
 .column {
   background-color: #e1f8dc;
-  float: left;
-  margin: 1%;
-  width: 31.33%;
-  padding: 10px;
-  border-radius: 5px;
-  height: 350px; /* Should be removed. Only for demonstration */
-  overflow-y: scroll;
+  flex-basis: 32%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 5px;
+  background: #e1f8dc;
+  color: #000000;
 }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .row {
+    display: block;
     width: 100%;
-    height: auto;
+  }
+  .column {
+    margin-bottom: 5px;
   }
 }
