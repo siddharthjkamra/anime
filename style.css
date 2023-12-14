@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
-
 * {
   box-sizing: border-box;
-  font-family: 'Victor Mono', monospace;
+  font-family:'Victor Mono', monospace;
   margin: 0;
+  line-height: 1.5;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 
 a, a:visited{
   color: blue;
+  text-decoration: none;
 }
 
 a:hover {
