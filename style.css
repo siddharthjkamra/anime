@@ -34,8 +34,12 @@ header .sitetitle {
   text-align: center;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .title:before {
-  content: '❤️ ';
+  content: '\2665';
 }
 
 .main-img-cover {
