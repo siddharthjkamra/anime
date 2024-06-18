@@ -1,7 +1,9 @@
 [
-  { "title": "Home", "url": "index.html" },
-  { "title": "About", "url": "about.html" },
-  { "title": "Contact", "url": "contact.html" },
-  { "title": "Services", "url": "services.html" },
-  { "title": "Blog", "url": "blog.html" }
+  { "title": "Doraemon", "url": "/series/doraemon/index.html" },
+  { "title": "Ninja Hattori", "url": "/series/ninja-hattori/index.html" },
+  { "title": "Shinchan", "url": "/series/shinchan/index.html" },
+  { "title": "The Kabocha Wine [The Pumpkin Wine]", "url": "/series/the-kabocha-wine/index.html" },
+  { "title": "Barakamon", "url": "/series/barakamon/index.html" },
+  { "title": "Fujiko Fujio", "url": "/people/fujiko-fujio.html" },
+  { "title": "Perman", "url": "#" }
 ]
