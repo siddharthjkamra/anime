@@ -1,118 +1,231 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiny Anime</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header oncontextmenu="return false" onselectstart="return false" ondragstart="return false"><div class="sitetitle" id="sitetitle">tiny anime</div></header>
-<div class="container">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Tiny Anime</title>
+  </head>
+  <body>
+  <style>
+  @font-face {
+    font-family: NectoMono;
+    src: url(assets/NectoMono-Regular.woff2);
+  }
+  body {
+    font-family: NectoMono;
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .list-group-item {
+    color: #0d6efd;
+  }
+  .list-group-item:hover {
+    background-color: #e8e8e8;
+  }
+  /* Responsive Columns*/
+/* Create three equal columns that floats next to each other */
+.card {
+  background-color: #e1f8dc;
+  flex-basis: 32%;
+  box-sizing: border-box;
+  padding: 5px;
+  background: #e1f8dc;
+  color: #000000;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  box-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+/* Clear floats after the columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    display: block;
+    width: 100%;
+    margin: 0px;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+}
+  </style>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tiny Anime</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list bold"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li></a>
+            <li><a class="dropdown-item" href="#">Another action</a></li></a>
+            <li><hr class="dropdown-divider"></li></a>
+            <li><a class="dropdown-item" href="#">Something else here</a></li></a>
+          </ul>
+        </li></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li></a>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" disabled>Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid my-2">
 <div class="row">
-<div class="column">
-<div class="title">Anime Series</div>
-<ol>
-<a href="series/doraemon/index.html"><li>Doraemon</li></a>
-<a href="series/ninja-hattori/index.html"><li>Ninja Hattori</li></a>
-<a href="series/shinchan/index.html"><li>Shinchan</li></a>
-<a href="#"><li>Perman</li></a>
-<a href="#"><li>Kiteretsu</li></a>
-<a href="#"><li>Chimpui</li></a>
-<a href="#"><li>Ultra B</li></a>
-<a href="#"><li>Kochikame</li></a>
-<a href="#"><li>Mojacko</li></a>
-<a href="#"><li>Mami the Psychic</li></a>
-<a href="#"><li>Biriken</li></a>
-<a href="#"><li>Atashinchi</li></a>
-<a href="#"><li>Kaibutsu-kun (The Monster Kid)</li></a>
-<a href="series/the-kabocha-wine/index.html"><li>The Kabocha Wine</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    Anime Series
+  </div>
+<ul class="list-group list-group-flush">
+  <a href="series/doraemon/index.html"><li class="list-group-item">Doraemon</li></a>
+  <a href="series/ninja-hattori/index.html"><li class="list-group-item">Ninja Hattori</li></a>
+  <a href="series/shinchan/index.html"><li class="list-group-item">Shinchan</li></a>
+  <a href="#"><li class="list-group-item">Perman</li></a>
+  <a href="#"><li class="list-group-item">Kiteretsu</li></a>
+  <a href="#"><li class="list-group-item">Chimpui</li></a>
+  <a href="#"><li class="list-group-item">Ultra B</li></a>
+  <a href="#"><li class="list-group-item">Kochikame</li></a>
+  <a href="#"><li class="list-group-item">Mojacko</li></a>
+  <a href="#"><li class="list-group-item">Mami the Psychic</li></a>
+  <a href="#"><li class="list-group-item">Biriken</li></a>
+  <a href="#"><li class="list-group-item">Atashinchi</li></a>
+  <a href="#"><li class="list-group-item">Kaibutsu-kun (The Monster Kid)</li></a>
+  <a href="#"><li class="list-group-item">The Kabocha Wine</li></a>
+</ul>
 </div>
 
-<div class="column">
-<div class="title">Anime Movies</div>
-<ol>
-<a href="#"><li>Doraemon Movies</li></a>
-<a href="#"><li>Shinchan Movies</li></a>
-<a href="#"><li>Ninja Hattori Movies</li></a>
-<a href="#"><li>Perman Movies</li></a>
-<a href="#"><li>Kochikame Movies</li></a>
-<a href="#"><li>Single Movies</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    Anime Movies
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="#"><li class="list-group-item">Doraemon Movies</li></a>
+    <a href="#"><li class="list-group-item">Shinchan Movies</li></a>
+    <a href="#"><li class="list-group-item">Ninja Hattori Movies</li></a>
+    <a href="#"><li class="list-group-item">Perman Movies</li></a>
+    <a href="#"><li class="list-group-item">Kochikame Movies</li></a>
+    <a href="#"><li class="list-group-item">Single Movies</li></a>
+</ul>
 </div>
 
-<div class="column">
-<div class="title">Ghibli Movies</div>
-<ol>
-<a href="#"><li>Spirited Away</li></a>
-<a href="#"><li>From Up on the Poppy Hill</li></a>
-<a href="#"><li>My Neighbour Totoro</li></a>
-<a href="#"><li>Kiki's Delivery Service</li></a>
-<a href="#"><li>Castle in the Sky</li></a>
-<a href="#"><li>The Wind Rises</li></a>
-<a href="#"><li>Howl's Moving Castle</li></a>
-<a href="#"><li>Whisper of the Heart</li></a>
-<a href="#"><li>Ocean Waves</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    Ghibli Movies
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="#"><li class="list-group-item">Spirited Away</li></a>
+    <a href="#"><li class="list-group-item">From Up on the Poppy Hill</li></a>
+    <a href="#"><li class="list-group-item">My Neighbour Totoro</li></a>
+    <a href="#"><li class="list-group-item">Kiki's Delivery Service</li></a>
+    <a href="#"><li class="list-group-item">Castle in the Sky</li></a>
+    <a href="#"><li class="list-group-item">The Wind Rises</li></a>
+    <a href="#"><li class="list-group-item">Howl's Moving Castle</li></a>
+    <a href="#"><li class="list-group-item">Whisper of the Heart</li></a>
+    <a href="#"><li class="list-group-item">Ocean Waves</li></a>
+</ul>
 </div>
-
-</div> <!-- Closing Row -->
+</div> <!-- Row -->
 
 <div class="row">
-<div class="column">
-<div class="title">Other Anime Series</div>
-<ol>
-<a href="series/barakamon/index.html"><li>Barakamon</li></a>
-<a href="#"><li>Mai Mai Miracle</li></a>
-<a href="#"><li>Anpanman</li></a>
-<a href="#"><li>Astro Boy</li></a>
-<a href="#"><li>Oishinbo</li></a>
-<a href="#"><li>The Laughing Salesman</li></a>
-<a href="#"><li>Erased</li></a>
-<a href="#"><li>Tsurupika Hagemaru</li></a>
-<a href="#"><li>First Human Giatrus (Gon - The Stone Age Boy)</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    Other Anime Series
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="series/barakamon/index.html">Barakamon</li></a>
+    <a href="#"><li class="list-group-item">Mai Mai Miracle</li></a>
+    <a href="#"><li class="list-group-item">Anpanman</li></a>
+    <a href="#"><li class="list-group-item">Astro Boy</li></a>
+    <a href="#"><li class="list-group-item">Oishinbo</li></a>
+    <a href="#"><li class="list-group-item">The Laughing Salesman</li></a>
+    <a href="#"><li class="list-group-item">Erased</li></a>
+    <a href="#"><li class="list-group-item">Tsurupika Hagemaru</li></a>
+    <a href="#"><li class="list-group-item">First Human Giatrus (Gon - The Stone Age Boy)</li></a>
+  </ul>
 </div>
 
-<div class="column">
-<div class="title">People</div>
-<ol>
-<a href="people/fujiko-fujio.html"><li>Fujiko Fujio</li></a>
-<a href="#"><li>Yoshito Usui</li></a>
-<a href="#"><li>Osamu Akimoto</li></a>
-<a href="#"><li>Shinbo Nomura</li></a>
-<a href="#"><li>Osamu Tezuka</li></a>
-<a href="#"><li>Takashi Yanase</li></a>
-<a href="#"><li>Tetsu Kariya</li></a>
-<a href="#"><li>Kei Sanbe</li></a>
-<a href="people/tetsuya-takeda.html"><li>Tetsuya Takeda</li></a>
-<a href="#"><li>Mitsuru Miura</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    People
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="people/fujiko-fujio.html">Fujiko Fujio</li></a>
+    <a href="#"><li class="list-group-item">Yoshito Usui</li></a>
+    <a href="#"><li class="list-group-item">Osamu Akimoto</li></a>
+    <a href="#"><li class="list-group-item">Shinbo Nomura</li></a>
+    <a href="#"><li class="list-group-item">Osamu Tezuka</li></a>
+    <a href="#"><li class="list-group-item">Takashi Yanase</li></a>
+    <a href="#"><li class="list-group-item">Tetsu Kariya</li></a>
+    <a href="#"><li class="list-group-item">Kei Sanbe</li></a>
+    <a href="people/tetsuya-takeda.html">Tetsuya Takeda<</li></a>
+    <a href="#"><li class="list-group-item">Mitsuru Miura</li></a>
+  </ul>
 </div>
 
-<div class="column">
-<div class="title">Companies</div>
-<ol>
-<a href="#"><li>Shogakukan</li></a>
-<a href="#"><li>Toho</li></a>
-<a href="#"><li>Fuji TV</li></a>
-<a href="#"><li>Shin-ei Animation</li></a>
-<a href="#"><li>Toho</li></a>
-<a href="#"><li>TV Asahi</li></a>
-<a href="#"><li>Animax</li></a>
-<a href="#"><li>Studio Ghibli</li></a>
-<a href="#"><li>Nippon TV</li></a>
-<a href="#"><li>Pierrot</li></a>
-<a href="#"><li>Studio Deen</li></a>
-<a href="#"><li>Shueisha</li></a>
-<a href="#"><li>Benesse</li></a>
-</ol>
+<div class="card">
+  <div class="card-header">
+    Companies
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="#"><li class="list-group-item">Shogakukan</li></a>
+    <a href="#"><li class="list-group-item">Toho</li></a>
+    <a href="#"><li class="list-group-item">Fuji TV</li></a>
+    <a href="#"><li class="list-group-item">Shin-ei Animation</li></a>
+    <a href="#"><li class="list-group-item">Toho</li></a>
+    <a href="#"><li class="list-group-item">TV Asahi</li></a>
+    <a href="#"><li class="list-group-item">Animax</li></a>
+    <a href="#"><li class="list-group-item">Studio Ghibli</li></a>
+    <a href="#"><li class="list-group-item">Nippon TV</li></a>
+    <a href="#"><li class="list-group-item">Pierrot</li></a>
+    <a href="#"><li class="list-group-item">Studio Deen</li></a>
+    <a href="#"><li class="list-group-item">Shueisha</li></a>
+    <a href="#"><li class="list-group-item">Benesse</li></a>
+  </ul>
 </div>
+</div> <!-- Row -->
 
-</div><!-- Closing Row -->
-<p style="font-size: 14px;">All content available here is collected from various sources as a fan of anime and images are used under fair usage policy. We do not claim to be owner of any of the content shown here nor we pirate anything. This is a simple encyclopaedia of Japanese anime. For any problem you can send us a message through our <a href="https://facebook.com/kodomomuke" target="_blank">Facebook</a> page.</p>
-</div><!-- Closing Container -->
+<p class="px-1"><small>All content available here is collected from various sources as a fan of anime and images are used under fair usage policy. We do not claim to be owner of any of the content shown here nor we pirate anything. This is a simple encyclopaedia of Japanese anime. For any problem you can send us a message through our <a href="https://facebook.com/kodomomuke" target="_blank">Facebook</a> page.</small></p>
+</div> <!-- Container -->
 <img oncontextmenu="return false" onselectstart="return false" ondragstart="return false" src="/assets/wave.png" style="margin-bottom:-10px;" width="100%" alt="The Great Wave off Kanagawa">
-</body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
