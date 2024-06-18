@@ -27,6 +27,9 @@ function includeHTML() {
           /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("katana");
           includeHTML();
+
+          // Scroll to top after including content
+          window.scrollTo(0, 0);
         }
       }
       xhttp.open("GET", file, true);
