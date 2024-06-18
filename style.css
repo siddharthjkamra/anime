@@ -1,10 +1,4 @@
-  @font-face {
-    font-family: NectoMono;
-    src: url(assets/NectoMono-Regular.woff2);
-  }
-
 * {
-  font-family: NectoMono;
   box-sizing: border-box;
   margin: 0;
   line-height: 1.5;
