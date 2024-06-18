@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="/assets/global.css">
+  <script type="module" src="/assets/import.js" defer></script>
+</head>
+<body>
+<div katana="/_data/_header"></div>
+<div class="container-fluid py-2">
+      <form id="search-form" action="/search.html" class="d-flex" role="search">
+        <input type="text" id="search-box" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+<br>
+  <h2>Search Results</h2>
+  <div id="results"></div>
+</div>
+<script src="assets/import.js"></script>
+</body>
+</html>
