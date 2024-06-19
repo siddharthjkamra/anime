@@ -12,7 +12,7 @@ a, a:visited{
   text-decoration: none;
 }
 a:hover {
-  color: #121212;
+  color: purple;
 }
 header {
   margin-bottom: 10px;
@@ -38,11 +38,13 @@ header .sitetitle {
 .main-img-cover {
   width: 100%;
   text-align: center;
-  margin: 5px;
+  padding-bottom: 16px;
 }
 .main-img-cover img {
   width: 70%;
-  border-radius: 1%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
 }
 .container {
   padding: 2%;
@@ -130,15 +132,4 @@ ul.breadcrumb li a:hover {
   .column {
     margin-bottom: 10px;
   }
-}
-
-.ft-img {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px; /* Adjust height as needed */
-  background-image: url('/assets/wave.png');
-  background-size: cover;
-  z-index: -1; /* Ensure the image stays behind content */
 }
