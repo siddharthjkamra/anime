@@ -1,4 +1,3 @@
-// search.js
 export function performSearch(query, data) {
   const resultsContainer = document.getElementById('results');
   if (query) {

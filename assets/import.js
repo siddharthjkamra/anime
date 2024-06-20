@@ -6,7 +6,6 @@ function loadBootstrap() {
   document.head.appendChild(script);
 }
 
-// Call the function to load Bootstrap
 loadBootstrap();
 
 function includeHTML() {
@@ -28,7 +27,6 @@ function includeHTML() {
           elmnt.removeAttribute("katana");
           includeHTML();
 
-          // Scroll to top after including content
           window.scrollTo(0, 0);
         }
       }
@@ -39,11 +37,9 @@ function includeHTML() {
   }
 }
 
-// Call includeHTML() to start including content when the document is ready
 document.addEventListener("DOMContentLoaded", function() {
   includeHTML();
 
-  // Dynamically load and execute search.js after including HTML
   import('./search.js')
     .then(module => {
       module.handleSearch();
