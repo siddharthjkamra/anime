@@ -11,3 +11,6 @@ body {
 a {
   text-decoration: none;
 }
+.dropdown-item {
+  font-size: 14px;
+}

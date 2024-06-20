@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+.dropdown-item {
+  font-size: 14px;
+}
 .list-group-item {
   color: #0d6efd;
 }
