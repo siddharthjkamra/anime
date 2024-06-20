@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
 }
-.dropdown-item {
+.dropdown-item, .form-control, .btn {
   font-size: 14px;
 }
 .list-group-item {
