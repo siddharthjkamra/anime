@@ -47,6 +47,18 @@ header .sitetitle {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
 }
+.glance {
+  margin-top: 5px;
+  text-align: center;
+}
+.glance img {
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #e8e8e8;
+}
+figcaption {
+  font-size: 12px;
+}
 .container {
   padding: 2%;
 }
