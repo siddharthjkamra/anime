@@ -59,6 +59,12 @@ header .sitetitle {
 figcaption {
   font-size: 12px;
 }
+.movie-list-wiki {
+  border-collapse: collapse;
+}
+.movie-list-wiki tr, th, td {
+  border: 1px solid #e8e8e8;
+}
 .container {
   padding: 2%;
 }
