@@ -61,6 +61,7 @@ figcaption {
 }
 .movie-list-wiki {
   border-collapse: collapse;
+  width: 100%;
 }
 .movie-list-wiki tr, th, td {
   border: 1px solid #e8e8e8;
