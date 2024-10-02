@@ -32,6 +32,10 @@ header .sitetitle {
 }
 .title {
   font-weight: bold;
+  border-bottom: 1.5px solid #e8e8e8;
+  background-color: #e8e8e8;
+  color: #272727;
+  padding: 4px;
 }
 .title:before {
   content: '\2665';
@@ -42,10 +46,17 @@ header .sitetitle {
   padding-bottom: 16px;
 }
 .main-img-cover img {
-  width: 70%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
+  border: 1px solid #eeeeee;
+  padding: 4px;
+  background-color: #fff;
+  max-width: 70%;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.main-img-cover img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .glance {
   margin-top: 5px;
@@ -89,6 +100,7 @@ ul.breadcrumb {
   list-style: none;
   background-color: #e1f8dc;
   margin: 1%;
+  border-radius: 4px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -115,11 +127,10 @@ ul.breadcrumb li a:hover {
   padding: 1%;
   }
   .main-img-cover img {
-  max-width: 600px;
+  max-width: 500px;
   }
 }
 /* Responsive Columns*/
-/* Create three equal columns that floats next to each other */
 .column {
   background-color: #e1f8dc;
   flex-basis: 32%;
