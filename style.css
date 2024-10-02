@@ -113,7 +113,10 @@ ul.breadcrumb li a:hover {
   }
   .menu li {
   padding: 1%;
-}
+  }
+  .main-img-cover img {
+  max-width: 600px;
+  }
 }
 /* Responsive Columns*/
 /* Create three equal columns that floats next to each other */
