@@ -9,6 +9,40 @@
   <body>
 <div katana="/_data/_header"></div>
 <div class="container-fluid my-2">
+<div class="hero">
+  <img src="/assets/nobita.jpg" alt="Anime" id="slider">
+  <div class="overlay">
+    <div class="text-content">
+    <!-- Text goes here that'll display over hero image -->
+    <h1></h1>
+    </div>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+const images = [
+    '/assets/nobita.jpg', // Image 1
+    '/assets/earth.jpg', // Image 2
+    '/assets/door.jpg' // Image 3
+];
+
+const slider = document.getElementById('slider');
+
+function changeImage() {
+  currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+  slider.src = images[currentIndex];
+  slider.classList.remove('visible'); // Hide current image
+  setTimeout(() => {
+    slider.classList.add('visible'); // Show new image
+  }, 50); // Delay to allow opacity change to register
+}
+
+// Initially show the first image
+slider.src = images[currentIndex];
+slider.classList.add('visible'); // Make it visible
+
+setInterval(changeImage, 3000); // Change image every 5 seconds
+</script>
 <div class="row">
 <div class="card">
   <div class="card-header">
@@ -21,7 +55,7 @@
   <a href="/series/perman/index.html"><li class="list-group-item">Perman</li></a>
   <a href="/series/kiteretsu/index.html"><li class="list-group-item">Kiteretsu</li></a>
   <a href="/series/chimpui/index.html"><li class="list-group-item">Chimpui</li></a>
-  <a href="#"><li class="list-group-item">Ultra B</li></a>
+  <a href="/series/ultra-b/index.html"><li class="list-group-item">Ultra B</li></a>
   <a href="#"><li class="list-group-item">Kochikame</li></a>
   <a href="#"><li class="list-group-item">Mojacko</li></a>
   <a href="#"><li class="list-group-item">Mami the Psychic</li></a>

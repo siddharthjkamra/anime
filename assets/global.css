@@ -14,3 +14,9 @@ a {
 .dropdown-item, .form-control, .btn {
   font-size: 14px;
 }
+.navbar-toggler {
+border-color: white!important;
+}
+.navbar-toggler .bi {
+color: white!important;
+}
