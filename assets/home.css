@@ -39,7 +39,7 @@ a {
 }
 .hero {
     position: relative;
-    height: 60vh;
+    height: 25vh;
     overflow: hidden;
     margin-bottom: 8px;
     border-radius: 8px;
