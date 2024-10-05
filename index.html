@@ -14,35 +14,9 @@
   <div class="overlay">
     <div class="text-content">
     <!-- Text goes here that'll display over hero image -->
-    <h1></h1>
     </div>
   </div>
 </div>
-<script>
-let currentIndex = 0;
-const images = [
-    '/assets/nobita.jpg', // Image 1
-    '/assets/earth.jpg', // Image 2
-    '/assets/door.jpg' // Image 3
-];
-
-const slider = document.getElementById('slider');
-
-function changeImage() {
-  currentIndex = (currentIndex + 1) % images.length; // Cycle through images
-  slider.src = images[currentIndex];
-  slider.classList.remove('visible'); // Hide current image
-  setTimeout(() => {
-    slider.classList.add('visible'); // Show new image
-  }, 50); // Delay to allow opacity change to register
-}
-
-// Initially show the first image
-slider.src = images[currentIndex];
-slider.classList.add('visible'); // Make it visible
-
-setInterval(changeImage, 3000); // Change image every 5 seconds
-</script>
 <div class="row">
 <div class="card">
   <div class="card-header">
@@ -171,6 +145,7 @@ setInterval(changeImage, 3000); // Change image every 5 seconds
 <p class="px-1"><small>All content available here is collected from various sources as a fan of anime and images are used under fair usage policy. We do not claim to be owner of any of the content shown here nor we pirate anything. This is a simple encyclopaedia of Japanese anime. For any problem you can send us a message through our <a href="https://facebook.com/kodomomuke" target="_blank">Facebook</a> page.</small></p>
 </div> <!-- Container Ends -->
 <img oncontextmenu="return false" onselectstart="return false" ondragstart="return false" src="/assets/wave.png" style="margin-bottom:-10px;" width="100%" alt="The Great Wave off Kanagawa">
-<script src="assets/import.js"></script>
+<script src="/assets/import.js"></script>
+<script src="/assets/slider.js"></script>
   </body>
 </html>
