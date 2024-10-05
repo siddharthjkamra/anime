@@ -117,3 +117,12 @@ a {
     margin-bottom: 10px;
   }
 }
+/* Footer */
+.tiny-footer {background-color: #f8f9fa;}
+.tiny-padding {padding-top: 1.5rem;padding-bottom: 1.5rem;}
+.tiny-container {width: 100%;max-width: 1140px;margin-left: auto;margin-right: auto;}
+.tiny-row {display: flex;flex-wrap: wrap;}
+.tiny-col {flex: 1;}
+.tiny-link {color: #272727!important;text-decoration: none;}
+.tiny-link:hover {text-decoration: underline;}
+.tiny-muted {color: #6c757d;}

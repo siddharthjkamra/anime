@@ -1,3 +1,17 @@
-<ul class="menu">
-<li><a href="/">Home</a></li>
-</ul>
+<footer class="tiny-footer text-center tiny-padding">
+  <div class="tiny-container">
+    <div class="tiny-row">
+      <div class="tiny-col">
+        <a href="/" class="tiny-link mx-2">Home</a>
+        <a href="/about" class="tiny-link mx-2">About</a>
+        <a href="/legal" class="tiny-link mx-2">Disclaimer</a>
+        <a href="/contact" class="tiny-link mx-2">Contact</a>
+      </div>
+    </div>
+    <div class="tiny-row mt-3">
+      <div class="tiny-col">
+        <p class="tiny-muted">&copy; 2024 Tiny Anime. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>

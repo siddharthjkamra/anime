@@ -89,24 +89,6 @@ figcaption {
 .movie-list-wiki tr, th, td {
   border: 1px solid #e8e8e8;
 }
-.container {
-  padding: 2%;
-}
-.menu {
-  list-style-type: none;
-  padding: 0px;
-  text-align: center;
-}
-.menu li {
-  display: inline-block;
-  background-color: #40396e;
-  color: white;
-  padding: 1.5%;
-}
-.menu li a {
-  text-decoration: none;
-  color: #ffffff;
-}
 ul.breadcrumb {
   padding: 2.5%;
   list-style: none;
@@ -176,3 +158,13 @@ ul.breadcrumb li a:hover {
     margin-bottom: 10px;
   }
 }
+
+/* Footer */
+.tiny-footer {background-color: #f8f9fa;}
+.tiny-padding {padding-top: 1.5rem;padding-bottom: 1.5rem;}
+.tiny-container {width: 100%;max-width: 1140px;margin-left: auto;margin-right: auto;}
+.tiny-row {display: flex;flex-wrap: wrap;}
+.tiny-col {flex: 1;}
+.tiny-link {color: #272727!important;text-decoration: none;}
+.tiny-link:hover {text-decoration: underline;}
+.tiny-muted {color: #6c757d;}
