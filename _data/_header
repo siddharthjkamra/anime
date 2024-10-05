@@ -10,21 +10,21 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li></a>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">About</a>
+          <a class="nav-link text-white" href="/about">About</a>
         </li></a>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li></a>
-            <li><a class="dropdown-item" href="#">Another action</a></li></a>
+            <li><a class="dropdown-item" href="#">Science fiction</a></li></a>
+            <li><a class="dropdown-item" href="#">Slice of life</a></li></a>
             <li><hr class="dropdown-divider"></li></a>
-            <li><a class="dropdown-item" href="#">Something else here</a></li></a>
+            <li><a class="dropdown-item" href="/legal">Disclaimer</a></li></a>
           </ul>
         </li></a>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Contact</a>
+          <a class="nav-link text-white" href="/contact">Contact</a>
         </li></a>
       </ul>
       <form id="search-form" action="/search.html" class="d-flex" role="search">
