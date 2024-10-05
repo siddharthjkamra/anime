@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" style="background-color: #6610f2;">
+<nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary" style="background-color: #6610f2;" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><img src="/assets/tinyanime_logo.png" alt="TinyAnime Logo" width="120px"></img></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
