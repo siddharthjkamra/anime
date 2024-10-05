@@ -8,6 +8,12 @@ body {
   margin: 0px;
   background-color: #ffffff;
 }
+.container {
+  padding: 2%;
+}
+table {
+  font-size: 14px!important;
+}
 a, a:visited{
   color: #0d6efd;
   text-decoration: none;
