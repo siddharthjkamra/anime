@@ -2,7 +2,7 @@ function loadScriptsAsync(scripts) {
   scripts.forEach(function(src) {
     var script = document.createElement('script');
     script.src = src;
-    script.async = true; // Load script asynchronously
+    script.async = true;
     document.head.appendChild(script);
   });
 }
