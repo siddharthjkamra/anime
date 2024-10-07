@@ -4,17 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search Results</title>
   <link rel="stylesheet" href="/style.css">
-  <style>
-  .navbar-toggler {
-  padding-top: 0.3rem;
-  }
-  </style>
 </head>
 <body>
 <div katana="/_data/_hws"></div>
 <div class="container py-2">
       <form id="search-form" action="/search.html" class="d-flex" role="search">
-        <input type="text" id="search-box" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+        <input type="text" minlength="3" id="search-box" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
 <br>

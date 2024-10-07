@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /experiment/
+Disallow: /_data/
+Disallow: /assets/*.json
