@@ -1,12 +1,16 @@
-function loadBootstrap() {
-  var script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js';
-  script.integrity = 'sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM';
-  script.crossOrigin = 'anonymous';
-  document.head.appendChild(script);
+function loadScriptsAsync(scripts) {
+  scripts.forEach(function(src) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = true; // Load script asynchronously
+    document.head.appendChild(script);
+  });
 }
 
-loadBootstrap();
+loadScriptsAsync([
+  'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
+  'https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js'
+]);
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
