@@ -6,14 +6,14 @@
   src: url(NectoMono-Regular.woff2);
 }
 body {
-  font-family: NectoMono;
-  font-size: 14px;
+font-family: NectoMono;
+font-size: 14px;
 }
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 .dropdown-item, .form-control, .btn {
-  font-size: 14px;
+font-size: 14px;
 }
 .navbar-toggler {
 border-color: white!important;

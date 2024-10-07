@@ -33,16 +33,16 @@ header .sitetitle {
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 .navbar-toggler {
-border-color: white!important;
-height: 1.8rem;
-padding-top: 0.3rem;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+  border-color: white!important;
+  height: 1.8rem;
+  padding-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .navbar-toggler .bi {
-color: white!important;
+  color: white!important;
 }
 .title-series {
   font-size: 150%;
@@ -164,7 +164,6 @@ ul.breadcrumb li a:hover {
     margin-bottom: 10px;
   }
 }
-
 /* Footer */
 .tiny-footer {background-color: #f8f9fa;}
 .tiny-padding {padding-top: 1.5rem;padding-bottom: 1.5rem;}
