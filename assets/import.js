@@ -9,7 +9,8 @@ function loadScriptsAsync(scripts) {
 
 loadScriptsAsync([
   'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
-  'https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js'
+  'https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js',
+  'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
 ]);
 
 function includeHTML() {
@@ -52,3 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
       console.error('Error loading search.js:', error);
     });
 });
+// GTranslate
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,it,ja,zh-CN,id,vi',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
