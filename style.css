@@ -56,7 +56,7 @@ header .sitetitle {
   padding: 4px;
 }
 .title:before {
-  content: '\2665';
+  content: '♥️';
 }
 .main-img-cover {
   width: 100%;
